@@ -1,0 +1,410 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
+@import './variables'
+@import './carousel'
+@import './modal'
+@import './dropdown'
+
+
+body 
+    font-family: 'Poppins', sans-serif
+    background-color: $bg
+    outline: none 
+   
+
+    header   
+        position: relative
+        z-index: 7
+        div         
+            display: flex
+            justify-content: center
+
+            
+        nav         
+            display: flex
+            overflow: hidden
+            background-color: white
+            padding: 90px 10px
+            transition: ease 0.8s
+            position: fixed
+            width: 100%
+            top: 0
+            z-index: 5
+          
+        
+            div:nth-child(4)
+                i 
+                    align-self: center
+                    cursor: pointer
+
+                i:active
+                    color: #0000005d
+                    
+                button 
+                    border: 0
+                    margin-right: 5px
+
+                button:nth-child(1)
+                    background-color: $dark
+                    border: 1px solid white
+                    height: 25px
+                    width: 25px
+                button:nth-child(2)
+                    background-color: white
+                    border: 1px solid $dark
+                    height: 25px
+                    width: 25px
+                button:nth-child(3)
+                    background-color: $dark
+                    border: 1px solid white
+                    color: white
+                    border-radius: 10px
+                    font-size: 80%
+                    padding: 5px 10px
+                    text-transform: bold
+
+                button:focus 
+                    outline: none
+
+                button:active 
+                    background-color: #0000005d
+
+        .navbar-light 
+            .navbar-nav 
+                .nav-link 
+                    font-size: 90%
+                    text-transform: uppercase
+   
+        #empo
+            padding: 55px 0
+        
+            img         
+                width: 80%
+
+    .section1 
+
+        background-color: rgb(243, 243, 243)
+        margin: auto
+
+        .sec1
+            display: flex
+            justify-content: center   
+            align-items: center
+
+            div 
+                
+                #tith3 
+                    font-size: 300%
+                    color: $red
+            
+                h1 
+                    font-weight: bold            
+                    font-size: 700%
+
+                button 
+            
+                    text-transform: uppercase
+                    border: 0            
+                    border-radius: 35px
+                    padding: 15px 40px
+                    font-size: 80%
+                    background-color: $red            
+                    color: white
+                    font-weight: bold
+
+                button:hover
+                    background-color: $dark
+
+                button::after
+                    content: ""
+                
+                button:hover::after
+                    content: ">"
+                    padding-left: 13px
+                    transition: ease .5s
+                    font-weight: bold
+
+                button:focus
+                    outline: none
+
+                .tex 
+                    color: #b3b3b3
+                
+                img 
+                    width: 65%
+
+            .sec11 
+                padding-left: 250px
+                padding-right: 0
+
+    .section2
+        div
+            display: flex
+            justify-content: center
+
+            div
+                height: 205px
+                background-size: cover
+                background-position: center
+                display: flex
+                align-items: center
+                width: 30%
+                margin: 0 10px
+                
+                a
+                    text-align: center
+                    color: white 
+                    border-bottom: solid 1px white
+                    align-items: center
+                    font-size: 170%
+                    font-weight: bold 
+                    text-decoration: none
+
+                    
+                    
+
+            .serv1 
+                
+                background-image: url('../img/services/service-1.jpg')
+                
+
+            .serv2 
+              
+                background-image: url('../img/services/service-2.jpg')
+
+            .serv3 
+            
+                background-image: url('../img/services/slider-3.jpg')
+    
+    .section3 
+        margin-top: 75px
+        h3 
+            padding-bottom: 50px
+            text-align: center
+            font-weight: bold 
+        
+        .row
+            div
+                .zoom
+                    overflow: hidden
+                    img
+                        width: 100%
+                        transition: ease 1s
+                    &:hover
+                        img
+                            transform: scale(1.2)
+                        .hide 
+                            opacity: 1 
+                            a 
+                                padding: 15px 0   
+                                color: white 
+                                 
+                    .hide 
+                        position: absolute
+                        bottom: 110px
+                        z-index: 3
+                        /* text-align: center; */
+                        opacity: 0
+                        transition: bottom ease 1s
+                       
+                       
+                        a 
+                            opacity: .7
+                            transition: ease .5s
+                            padding: 19px 10px 0
+                            color: white
+
+                        .view 
+                            background-color: $dark
+                            
+
+                        .addTo
+                            background-color: $red
+
+                            
+                div 
+                    
+                    .onsale
+                        background-color: $red
+                        color: white
+                        font-size: 13px
+                        font-weight: 600
+                        line-height: 48px
+                        width: 48px
+                        padding: 0px 0 0px 8px
+                        height: 48px
+                        border-radius: 100%
+                        display: inline-block 
+                        margin-right: 20px
+
+
+                    a 
+                        text-decoration: none
+                        color: black 
+                        font-weight: bold 
+                        
+                    
+                    del 
+                        color: #b6b6b6
+                        padding-right: 5px
+                        font-weight: bold
+
+                    p 
+                        color:  $red
+                        font-weight: bold
+
+
+    .section5 
+        background-image: url('../img/cta-bg.jpg')
+        background-size: cover
+        background-position: center 
+        background-attachment: fixed
+        height: 709.9px
+        display: flex
+        align-items: center
+        justify-content: center
+     
+
+        div 
+            text-align: center
+           
+            h1 
+                font-weight: bold 
+                color: white
+
+            button 
+                color: white
+                font-weight: bold
+                border: 0
+                border-radius: 25px 
+                background-color: $red
+                padding: 10px 30px
+
+            button:focus 
+                outline: none
+             
+     
+    .section6 
+        margin-top: 120px
+        h3 
+            padding-bottom: 50px
+            text-align: center
+            font-weight: bold   
+
+
+
+
+    .section7 
+        margin-top: 120px
+        margin-bottom: 120px
+
+        .row
+            text-align: center
+            display: flex
+            justify-content: center
+
+            .panel
+                background-color: rgb(243, 243, 243)
+                margin: 10px
+                line-height: 1.7
+                padding: 70px 0px
+                flex: 1
+                
+                i 
+                    color: #303030
+                    font-size: 250%
+                    font-weight: bold
+                    padding-bottom: 40px
+
+                p:nth-child(2) 
+                    font-weight: bold
+
+                p:nth-child(3)
+                    color: #b6b6b6
+                    padding: 10px 90px
+
+                button 
+                    border: 0
+                    background-color: #303030
+                    color: white
+                    text-transform: uppercase 
+                    padding: 10px 30px
+                button:focus
+                    outline: none
+
+    .section8 
+        background-color: #212121
+        color: #9b9b9b
+        padding: 15px 120px
+        
+        
+        .row 
+            margin: 0 100px
+            padding: 50px 0
+            div 
+                padding: 0px 30px
+                flex: 1
+                h2 
+                    
+                    font-size: 90%
+                    color: white
+                    text-transform: uppercase 
+                    text-transform: bold
+                p 
+                    font-size: 80%
+
+            #milieu 
+                border-left: 1px solid #353535    
+                border-right: 1px solid #353535 
+                   
+                
+                ul
+                    padding: 0
+                    li
+                        list-style: none
+                        border-bottom:  1px solid #353535 
+                        padding-bottom: 5px
+                        margin-bottom: 10px
+
+                        a 
+                            font-size: 80%
+                            color: #9b9b9b
+                            text-decoration: none
+
+                        a:hover 
+                            color: white
+                            transition: ease 1s
+
+                        
+                    li::before 
+                        content: ">"
+                        padding-right: 10px
+
+
+            #tag
+                
+                
+                a
+                    font-size: 55%
+                    text-transform: uppercase 
+                    color: #9b9b9b
+                    text-decoration: none
+                    border: 1px solid #353535 
+                    padding: 8px 16px
+                    margin: 0 10px 10px 0
+                    
+                a:hover
+                  
+                    color: white
+                    border: 1px solid white
+                    transition: ease 1s
+                
+    footer         
+        text-align: center       
+        p 
+            padding: 35px 0
+            color: 838383
+            background-color: $dark
+            margin: 0
+            
+    
